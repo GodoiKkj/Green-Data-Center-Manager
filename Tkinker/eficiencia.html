@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module eficiencia</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">eficiencia</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Carthu%5Cgs2-green%20data%20center%20manager%5Ctkinker%5Ceficiencia.py">c:\users\arthu\gs2-green data center manager\tkinker\eficiencia.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="eficiencia.html#DicionarioOrdenado">DicionarioOrdenado</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DicionarioOrdenado">class <strong>DicionarioOrdenado</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Classe&nbsp;que&nbsp;encapsula&nbsp;o&nbsp;comportamento&nbsp;de&nbsp;um&nbsp;SortedDict&nbsp;para&nbsp;facilitar<br>
+a&nbsp;manipulação&nbsp;de&nbsp;um&nbsp;dicionário&nbsp;ordenado.&nbsp;Usa&nbsp;a&nbsp;estrutura&nbsp;de&nbsp;dados&nbsp;<br>
+SortedDict&nbsp;da&nbsp;biblioteca&nbsp;'sortedcontainers'.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="DicionarioOrdenado-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Inicializa&nbsp;o&nbsp;dicionário&nbsp;ordenado&nbsp;vazio.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(1)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-buscar"><strong>buscar</strong></a>(self, chave)</dt><dd><span class="code">Retorna&nbsp;o&nbsp;valor&nbsp;associado&nbsp;à&nbsp;chave&nbsp;fornecida.<br>
+&nbsp;<br>
+Parâmetros:<br>
+chave&nbsp;(str):&nbsp;A&nbsp;chave&nbsp;para&nbsp;buscar&nbsp;no&nbsp;dicionário.<br>
+&nbsp;<br>
+Retorna:<br>
+int:&nbsp;O&nbsp;valor&nbsp;associado&nbsp;à&nbsp;chave.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(log&nbsp;N)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-existe"><strong>existe</strong></a>(self, chave)</dt><dd><span class="code">Verifica&nbsp;se&nbsp;a&nbsp;chave&nbsp;existe&nbsp;no&nbsp;dicionário.<br>
+&nbsp;<br>
+Parâmetros:<br>
+chave&nbsp;(str):&nbsp;A&nbsp;chave&nbsp;a&nbsp;ser&nbsp;verificada.<br>
+&nbsp;<br>
+Retorna:<br>
+bool:&nbsp;True&nbsp;se&nbsp;a&nbsp;chave&nbsp;existir,&nbsp;False&nbsp;caso&nbsp;contrário.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(log&nbsp;N)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-inserir"><strong>inserir</strong></a>(self, chave, valor)</dt><dd><span class="code">Insere&nbsp;um&nbsp;novo&nbsp;par&nbsp;chave-valor&nbsp;no&nbsp;dicionário&nbsp;ordenado.<br>
+&nbsp;<br>
+Parâmetros:<br>
+chave&nbsp;(str):&nbsp;A&nbsp;chave&nbsp;a&nbsp;ser&nbsp;inserida&nbsp;no&nbsp;dicionário.<br>
+valor&nbsp;(int):&nbsp;O&nbsp;valor&nbsp;associado&nbsp;à&nbsp;chave.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(log&nbsp;N)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-iterar"><strong>iterar</strong></a>(self)</dt><dd><span class="code">Itera&nbsp;sobre&nbsp;o&nbsp;dicionário,&nbsp;exibindo&nbsp;todas&nbsp;as&nbsp;chaves&nbsp;e&nbsp;valores.<br>
+&nbsp;<br>
+Exibe&nbsp;cada&nbsp;chave&nbsp;e&nbsp;valor&nbsp;no&nbsp;formato:&nbsp;"chave:&nbsp;valor".</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-maior_chave"><strong>maior_chave</strong></a>(self)</dt><dd><span class="code">Retorna&nbsp;o&nbsp;maior&nbsp;par&nbsp;chave-valor&nbsp;no&nbsp;dicionário.<br>
+&nbsp;<br>
+Retorna:<br>
+tuple:&nbsp;O&nbsp;par&nbsp;(chave,&nbsp;valor)&nbsp;do&nbsp;maior&nbsp;item.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(1)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-menor_chave"><strong>menor_chave</strong></a>(self)</dt><dd><span class="code">Retorna&nbsp;o&nbsp;menor&nbsp;par&nbsp;chave-valor&nbsp;no&nbsp;dicionário.<br>
+&nbsp;<br>
+Retorna:<br>
+tuple:&nbsp;O&nbsp;par&nbsp;(chave,&nbsp;valor)&nbsp;do&nbsp;menor&nbsp;item.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(1)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-mostrar_dados"><strong>mostrar_dados</strong></a>(self)</dt><dd><span class="code">Exibe&nbsp;todos&nbsp;os&nbsp;dados&nbsp;do&nbsp;dicionário&nbsp;ordenado.<br>
+&nbsp;<br>
+Retorna:<br>
+dict:&nbsp;O&nbsp;dicionário&nbsp;ordenado&nbsp;como&nbsp;um&nbsp;objeto&nbsp;dict.</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-remover"><strong>remover</strong></a>(self, chave)</dt><dd><span class="code">Remove&nbsp;um&nbsp;item&nbsp;do&nbsp;dicionário&nbsp;com&nbsp;base&nbsp;na&nbsp;chave&nbsp;fornecida.<br>
+&nbsp;<br>
+Parâmetros:<br>
+chave&nbsp;(str):&nbsp;A&nbsp;chave&nbsp;a&nbsp;ser&nbsp;removida.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(log&nbsp;N)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-remover_maior"><strong>remover_maior</strong></a>(self)</dt><dd><span class="code">Remove&nbsp;o&nbsp;maior&nbsp;item&nbsp;(par&nbsp;chave-valor)&nbsp;do&nbsp;dicionário.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(log&nbsp;N)</span></dd></dl>
+
+<dl><dt><a name="DicionarioOrdenado-remover_menor"><strong>remover_menor</strong></a>(self)</dt><dd><span class="code">Remove&nbsp;o&nbsp;menor&nbsp;item&nbsp;(par&nbsp;chave-valor)&nbsp;do&nbsp;dicionário.<br>
+&nbsp;<br>
+Complexidade:&nbsp;O(log&nbsp;N)</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>dicionario</strong> = &lt;eficiencia.DicionarioOrdenado object&gt;</td></tr></table>
+</body></html>

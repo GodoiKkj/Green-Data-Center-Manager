@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module priorizacao</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">priorizacao</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Carthu%5Cgs2-green%20data%20center%20manager%5Ctkinker%5Cpriorizacao.py">c:\users\arthu\gs2-green data center manager\tkinker\priorizacao.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="priorizacao.html#DataCenter">DataCenter</a>
+</dt><dt class="heading-text"><a href="priorizacao.html#EnergySource">EnergySource</a>
+</dt><dt class="heading-text"><a href="priorizacao.html#Server">Server</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DataCenter">class <strong>DataCenter</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#DataCenter">DataCenter</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;renewable_capacity_kW:&nbsp;float,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;regular_capacity_kW:&nbsp;float,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;server_energy_consumption_kW:&nbsp;float,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num_servers:&nbsp;int<br>
+)<br>
+&nbsp;<br>
+Representa&nbsp;o&nbsp;<a href="#DataCenter">DataCenter</a>,&nbsp;gerenciando&nbsp;a&nbsp;alocação&nbsp;de&nbsp;servidores&nbsp;e&nbsp;energia.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="DataCenter-__init__"><strong>__init__</strong></a>(
+    self,
+    renewable_capacity_kW: float,
+    regular_capacity_kW: float,
+    server_energy_consumption_kW: float,
+    num_servers: int
+)</dt><dd><span class="code">Inicializa&nbsp;o&nbsp;<a href="#DataCenter">DataCenter</a>&nbsp;com&nbsp;capacidade&nbsp;de&nbsp;energia&nbsp;e&nbsp;servidores.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;renewable_capacity_kW&nbsp;(float):&nbsp;Capacidade&nbsp;de&nbsp;energia&nbsp;renovável&nbsp;total.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;regular_capacity_kW&nbsp;(float):&nbsp;Capacidade&nbsp;de&nbsp;energia&nbsp;comum&nbsp;total.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;server_energy_consumption_kW&nbsp;(float):&nbsp;Consumo&nbsp;de&nbsp;energia&nbsp;por&nbsp;servidor.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num_servers&nbsp;(int):&nbsp;Número&nbsp;de&nbsp;servidores.</span></dd></dl>
+
+<dl><dt><a name="DataCenter-assign_task"><strong>assign_task</strong></a>(self, server_id: int)</dt><dd><span class="code">Atribui&nbsp;uma&nbsp;tarefa&nbsp;a&nbsp;um&nbsp;servidor,&nbsp;alocando&nbsp;a&nbsp;energia&nbsp;necessária.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;server_id&nbsp;(int):&nbsp;Identificador&nbsp;do&nbsp;servidor.</span></dd></dl>
+
+<dl><dt><a name="DataCenter-deactivate_server"><strong>deactivate_server</strong></a>(self, server_id: int)</dt><dd><span class="code">Desativa&nbsp;um&nbsp;servidor.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;server_id&nbsp;(int):&nbsp;Identificador&nbsp;do&nbsp;servidor.</span></dd></dl>
+
+<dl><dt><a name="DataCenter-status"><strong>status</strong></a>(self)</dt><dd><span class="code">Exibe&nbsp;o&nbsp;status&nbsp;dos&nbsp;servidores&nbsp;e&nbsp;da&nbsp;fonte&nbsp;de&nbsp;energia.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="EnergySource">class <strong>EnergySource</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#EnergySource">EnergySource</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;renewable_capacity_kW:&nbsp;float,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;regular_capacity_kW:&nbsp;float,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num_servers:&nbsp;int<br>
+)<br>
+&nbsp;<br>
+Representa&nbsp;a&nbsp;fonte&nbsp;de&nbsp;energia&nbsp;de&nbsp;um&nbsp;<a href="#DataCenter">DataCenter</a>,&nbsp;incluindo&nbsp;capacidades&nbsp;renováveis&nbsp;e&nbsp;comuns.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="EnergySource-__init__"><strong>__init__</strong></a>(
+    self,
+    renewable_capacity_kW: float,
+    regular_capacity_kW: float,
+    num_servers: int
+)</dt><dd><span class="code">Inicializa&nbsp;a&nbsp;fonte&nbsp;de&nbsp;energia.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;renewable_capacity_kW&nbsp;(float):&nbsp;Capacidade&nbsp;total&nbsp;de&nbsp;energia&nbsp;renovável&nbsp;em&nbsp;kW.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;regular_capacity_kW&nbsp;(float):&nbsp;Capacidade&nbsp;total&nbsp;de&nbsp;energia&nbsp;comum&nbsp;em&nbsp;kW.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num_servers&nbsp;(int):&nbsp;Número&nbsp;de&nbsp;servidores.</span></dd></dl>
+
+<dl><dt><a name="EnergySource-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="EnergySource-allocate_energy"><strong>allocate_energy</strong></a>(self, demand_kW: float, server_id: int) -&gt; Tuple[str, Tuple[float, float]]</dt><dd><span class="code">Aloca&nbsp;energia&nbsp;para&nbsp;um&nbsp;servidor&nbsp;com&nbsp;base&nbsp;na&nbsp;demanda.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;demand_kW&nbsp;(float):&nbsp;A&nbsp;demanda&nbsp;de&nbsp;energia&nbsp;do&nbsp;servidor.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;server_id&nbsp;(int):&nbsp;O&nbsp;ID&nbsp;do&nbsp;servidor.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tuple[str,&nbsp;Tuple[float,&nbsp;float]]:&nbsp;Tipo&nbsp;de&nbsp;energia&nbsp;usada&nbsp;(renovável,&nbsp;mista)&nbsp;e&nbsp;a&nbsp;quantidade&nbsp;de&nbsp;energia&nbsp;consumida.</span></dd></dl>
+
+<dl><dt><a name="EnergySource-regular_status"><strong>regular_status</strong></a>(self) -&gt; float</dt><dd><span class="code">Retorna&nbsp;o&nbsp;status&nbsp;da&nbsp;energia&nbsp;comum&nbsp;disponível.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;A&nbsp;energia&nbsp;comum&nbsp;total&nbsp;disponível.</span></dd></dl>
+
+<dl><dt><a name="EnergySource-renewable_status"><strong>renewable_status</strong></a>(self) -&gt; float</dt><dd><span class="code">Retorna&nbsp;o&nbsp;status&nbsp;da&nbsp;energia&nbsp;renovável&nbsp;disponível.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;A&nbsp;energia&nbsp;renovável&nbsp;total&nbsp;disponível.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Server">class <strong>Server</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Server">Server</a>(server_id:&nbsp;int,&nbsp;energy_consumption_kW:&nbsp;float)<br>
+&nbsp;<br>
+Representa&nbsp;um&nbsp;servidor&nbsp;no&nbsp;<a href="#DataCenter">DataCenter</a>.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Server-__init__"><strong>__init__</strong></a>(self, server_id: int, energy_consumption_kW: float)</dt><dd><span class="code">Inicializa&nbsp;um&nbsp;servidor.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;server_id&nbsp;(int):&nbsp;Identificador&nbsp;do&nbsp;servidor.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;energy_consumption_kW&nbsp;(float):&nbsp;Consumo&nbsp;de&nbsp;energia&nbsp;do&nbsp;servidor&nbsp;por&nbsp;tarefa.</span></dd></dl>
+
+<dl><dt><a name="Server-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="Server-activate"><strong>activate</strong></a>(self, renewable_used: float, regular_used: float)</dt><dd><span class="code">Ativa&nbsp;o&nbsp;servidor&nbsp;com&nbsp;a&nbsp;energia&nbsp;alocada.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;renewable_used&nbsp;(float):&nbsp;Energia&nbsp;renovável&nbsp;usada.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;regular_used&nbsp;(float):&nbsp;Energia&nbsp;comum&nbsp;usada.</span></dd></dl>
+
+<dl><dt><a name="Server-deactivate"><strong>deactivate</strong></a>(self)</dt><dd><span class="code">Desativa&nbsp;o&nbsp;servidor.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Tuple</strong> = typing.Tuple<br>
+<strong>data_center</strong> = &lt;priorizacao.DataCenter object&gt;<br>
+<strong>i</strong> = 4</td></tr></table>
+</body></html>

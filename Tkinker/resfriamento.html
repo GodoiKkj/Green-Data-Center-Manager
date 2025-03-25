@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module resfriamento</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">resfriamento</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Carthu%5Cgs2-green%20data%20center%20manager%5Ctkinker%5Cresfriamento.py">c:\users\arthu\gs2-green data center manager\tkinker\resfriamento.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="time.html">time</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="resfriamento.html#DataCenter">DataCenter</a>
+</dt><dt class="heading-text"><a href="resfriamento.html#Server">Server</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DataCenter">class <strong>DataCenter</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#DataCenter">DataCenter</a>(num_servers=5)<br>
+&nbsp;<br>
+Representa&nbsp;um&nbsp;Data&nbsp;Center&nbsp;que&nbsp;gerencia&nbsp;servidores&nbsp;e&nbsp;a&nbsp;alocação&nbsp;de&nbsp;tarefas.<br>
+&nbsp;<br>
+Atributos:<br>
+servers&nbsp;(SortedList):&nbsp;Lista&nbsp;de&nbsp;servidores&nbsp;ordenada&nbsp;por&nbsp;temperatura&nbsp;e&nbsp;carga.<br>
+&nbsp;<br>
+Métodos:<br>
+<a href="#DataCenter-add_task">add_task</a>(load):&nbsp;Adiciona&nbsp;uma&nbsp;tarefa&nbsp;ao&nbsp;servidor&nbsp;com&nbsp;menor&nbsp;temperatura&nbsp;e&nbsp;carga.<br>
+<a href="#DataCenter-check_and_cool">check_and_cool</a>():&nbsp;Verifica&nbsp;e&nbsp;resfria&nbsp;os&nbsp;servidores&nbsp;que&nbsp;ultrapassaram&nbsp;a&nbsp;temperatura&nbsp;máxima.<br>
+<a href="#DataCenter-redistribute_load">redistribute_load</a>(overheated_server):&nbsp;Redistribui&nbsp;a&nbsp;carga&nbsp;de&nbsp;um&nbsp;servidor&nbsp;que&nbsp;superou&nbsp;o&nbsp;limite&nbsp;de&nbsp;temperatura.<br>
+<a href="#DataCenter-status">status</a>():&nbsp;Exibe&nbsp;o&nbsp;status&nbsp;atual&nbsp;de&nbsp;todos&nbsp;os&nbsp;servidores&nbsp;e&nbsp;da&nbsp;carga&nbsp;de&nbsp;energia.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="DataCenter-__init__"><strong>__init__</strong></a>(self, num_servers=5)</dt><dd><span class="code">Inicializa&nbsp;o&nbsp;Data&nbsp;Center&nbsp;com&nbsp;servidores.</span></dd></dl>
+
+<dl><dt><a name="DataCenter-add_task"><strong>add_task</strong></a>(self, load)</dt><dd><span class="code">Aloca&nbsp;uma&nbsp;tarefa&nbsp;para&nbsp;o&nbsp;servidor&nbsp;com&nbsp;menor&nbsp;temperatura&nbsp;e&nbsp;carga.<br>
+&nbsp;<br>
+Parâmetros:<br>
+load&nbsp;(int):&nbsp;A&nbsp;carga&nbsp;da&nbsp;tarefa&nbsp;a&nbsp;ser&nbsp;alocada&nbsp;ao&nbsp;servidor.</span></dd></dl>
+
+<dl><dt><a name="DataCenter-check_and_cool"><strong>check_and_cool</strong></a>(self)</dt><dd><span class="code">Verifica&nbsp;se&nbsp;algum&nbsp;servidor&nbsp;está&nbsp;superaquecido&nbsp;e&nbsp;resfria&nbsp;quando&nbsp;necessário.</span></dd></dl>
+
+<dl><dt><a name="DataCenter-redistribute_load"><strong>redistribute_load</strong></a>(self, overheated_server)</dt><dd><span class="code">Redistribui&nbsp;a&nbsp;carga&nbsp;de&nbsp;um&nbsp;servidor&nbsp;que&nbsp;superou&nbsp;o&nbsp;limite&nbsp;de&nbsp;temperatura.<br>
+&nbsp;<br>
+Parâmetros:<br>
+overheated_server&nbsp;(<a href="#Server">Server</a>):&nbsp;O&nbsp;servidor&nbsp;que&nbsp;precisa&nbsp;ter&nbsp;sua&nbsp;carga&nbsp;redistribuída.</span></dd></dl>
+
+<dl><dt><a name="DataCenter-status"><strong>status</strong></a>(self)</dt><dd><span class="code">Exibe&nbsp;o&nbsp;status&nbsp;atual&nbsp;de&nbsp;todos&nbsp;os&nbsp;servidores&nbsp;e&nbsp;da&nbsp;fonte&nbsp;de&nbsp;energia.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Server">class <strong>Server</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Server">Server</a>(server_id,&nbsp;max_temp=75)<br>
+&nbsp;<br>
+Representa&nbsp;um&nbsp;servidor&nbsp;no&nbsp;Data&nbsp;Center.<br>
+&nbsp;<br>
+Atributos:<br>
+server_id&nbsp;(int):&nbsp;Identificador&nbsp;único&nbsp;do&nbsp;servidor.<br>
+current_load&nbsp;(int):&nbsp;Carga&nbsp;atual&nbsp;do&nbsp;servidor.<br>
+temperature&nbsp;(float):&nbsp;Temperatura&nbsp;atual&nbsp;do&nbsp;servidor.<br>
+max_temp&nbsp;(float):&nbsp;Temperatura&nbsp;máxima&nbsp;permitida&nbsp;para&nbsp;o&nbsp;servidor.<br>
+tasks_transferred&nbsp;(int):&nbsp;Quantidade&nbsp;de&nbsp;tarefas&nbsp;transferidas&nbsp;de/para&nbsp;o&nbsp;servidor.<br>
+&nbsp;<br>
+Métodos:<br>
+<a href="#Server-add_task">add_task</a>(load):&nbsp;Adiciona&nbsp;carga&nbsp;ao&nbsp;servidor&nbsp;e&nbsp;atualiza&nbsp;a&nbsp;temperatura.<br>
+<a href="#Server-release_task">release_task</a>(load):&nbsp;Libera&nbsp;carga&nbsp;do&nbsp;servidor&nbsp;e&nbsp;atualiza&nbsp;a&nbsp;temperatura.<br>
+<a href="#Server-update_temperature">update_temperature</a>():&nbsp;Atualiza&nbsp;a&nbsp;temperatura&nbsp;do&nbsp;servidor&nbsp;com&nbsp;base&nbsp;na&nbsp;carga.<br>
+<a href="#Server-cool_down">cool_down</a>():&nbsp;Diminui&nbsp;a&nbsp;temperatura&nbsp;do&nbsp;servidor.<br>
+<a href="#Server-__repr__">__repr__</a>():&nbsp;Representação&nbsp;textual&nbsp;do&nbsp;servidor.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Server-__init__"><strong>__init__</strong></a>(self, server_id, max_temp=75)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Server-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="Server-add_task"><strong>add_task</strong></a>(self, load)</dt><dd><span class="code">Adiciona&nbsp;carga&nbsp;ao&nbsp;servidor&nbsp;e&nbsp;atualiza&nbsp;sua&nbsp;temperatura.</span></dd></dl>
+
+<dl><dt><a name="Server-cool_down"><strong>cool_down</strong></a>(self)</dt><dd><span class="code">Diminui&nbsp;a&nbsp;temperatura&nbsp;do&nbsp;servidor&nbsp;em&nbsp;5°C,&nbsp;com&nbsp;limite&nbsp;de&nbsp;25°C.</span></dd></dl>
+
+<dl><dt><a name="Server-release_task"><strong>release_task</strong></a>(self, load)</dt><dd><span class="code">Libera&nbsp;carga&nbsp;do&nbsp;servidor&nbsp;e&nbsp;atualiza&nbsp;sua&nbsp;temperatura.</span></dd></dl>
+
+<dl><dt><a name="Server-update_temperature"><strong>update_temperature</strong></a>(self)</dt><dd><span class="code">Atualiza&nbsp;a&nbsp;temperatura&nbsp;do&nbsp;servidor&nbsp;com&nbsp;base&nbsp;na&nbsp;carga&nbsp;atual.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>data_center</strong> = &lt;resfriamento.DataCenter object&gt;<br>
+<strong>load</strong> = 30<br>
+<strong>task_loads</strong> = [20, 40, 15, 10, 35, 50, 30]</td></tr></table>
+</body></html>
