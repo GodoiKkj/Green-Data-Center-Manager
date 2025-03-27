@@ -63,7 +63,7 @@ class DataCenter:
     add_task(load): Adiciona uma tarefa ao servidor com menor temperatura e carga.
     check_and_cool(): Verifica e resfria os servidores que ultrapassaram a temperatura máxima.
     redistribute_load(overheated_server): Redistribui a carga de um servidor que superou o limite de temperatura.
-    status(): Exibe o status atual de todos os servidores e da carga de energia.
+    status(): Exibe o status atual de todos os servidores e da carga de energia...
     """
     
     def __init__(self, num_servers=5):
